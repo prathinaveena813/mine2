@@ -1,136 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NumPy & Pandas for Data Analytics</title>
+<section class="card" style="margin-top: 18px;">
   <style>
-    :root {
-      --bg: #f7f2ea;
-      --card: #fffaf3;
-      --text: #2f2a24;
-      --muted: #6f6257;
-      --accent: #c46f45;
-      --accent-soft: #f0d7c5;
-      --border: #eadfd2;
-      --code-bg: #f4eadf;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top left, #fff6ec, var(--bg) 45%);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 48px 20px;
-    }
-
-    header {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 34px;
-      box-shadow: 0 16px 40px rgba(94, 69, 47, 0.08);
-    }
-
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      font-size: 0.78rem;
-    }
-
-    h1 {
-      margin: 10px 0 12px;
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      line-height: 1.05;
-    }
-
-    .intro {
-      color: var(--muted);
-      max-width: 720px;
-      font-size: 1.08rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 18px;
-      margin-top: 22px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 22px;
-      box-shadow: 0 10px 26px rgba(94, 69, 47, 0.06);
-    }
-
-    h2 {
-      margin: 0 0 8px;
-      font-size: 1.35rem;
-    }
-
-    p {
-      margin: 0 0 14px;
-      color: var(--muted);
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
-      color: var(--muted);
-    }
-
-    code, pre {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-    }
-
-    pre {
-      background: var(--code-bg);
-      border: 1px solid var(--border);
-      padding: 16px;
-      border-radius: 16px;
-      overflow-x: auto;
-      color: #3d332c;
-      font-size: 0.92rem;
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--accent-soft);
-      color: #7a3f24;
-      padding: 6px 10px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 650;
-      margin: 4px 6px 0 0;
-    }
-
-    .workflow {
-      display: grid;
-      gap: 12px;
-      margin-top: 12px;
-    }
-
-    .step {
-      border-left: 4px solid var(--accent);
-      padding: 10px 14px;
-      background: rgba(255, 250, 243, 0.75);
-      border-radius: 12px;
-    }
-
     .quiz-question {
       margin-top: 16px;
       padding: 16px;
@@ -144,14 +13,14 @@
       font-size: 1rem;
     }
 
-    label {
+    .quiz-question label {
       display: block;
       margin: 8px 0;
       color: var(--muted);
       cursor: pointer;
     }
 
-    button {
+    .quiz-btn {
       margin-top: 16px;
       background: var(--accent);
       color: white;
@@ -162,173 +31,76 @@
       cursor: pointer;
     }
 
-    button:hover {
-      opacity: 0.9;
-    }
-
-    #result {
+    #quiz-result {
       margin-top: 14px;
       font-weight: 700;
       color: var(--accent);
     }
-
-    footer {
-      margin-top: 28px;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
   </style>
-</head>
-<body>
-  <main class="page">
-    <header>
-      <div class="eyebrow">Data Analytics Starter</div>
-      <h1>Using NumPy & Pandas</h1>
-      <p class="intro">
-        NumPy helps you work with fast numerical arrays. Pandas helps you clean,
-        transform, summarize, and explore tabular data like CSV files, Excel sheets,
-        and database exports.
-      </p>
-      <div>
-        <span class="tag">Python</span>
-        <span class="tag">Arrays</span>
-        <span class="tag">DataFrames</span>
-        <span class="tag">Analytics</span>
-      </div>
-    </header>
 
-    <section class="grid">
-      <article class="card">
-        <h2>NumPy</h2>
-        <p>
-          NumPy is used for numerical computing. It is best for arrays, mathematical
-          operations, statistics, and efficient calculations.
-        </p>
-        <ul>
-          <li>Create arrays</li>
-          <li>Calculate mean, median, standard deviation</li>
-          <li>Perform vectorized operations</li>
-        </ul>
-      </article>
+  <h2>Quick MCQ Practice</h2>
+  <p>Test your basic understanding of NumPy and Pandas.</p>
 
-      <article class="card">
-        <h2>Pandas</h2>
-        <p>
-          Pandas is used for structured data. It makes it simple to load, filter,
-          group, merge, and analyze datasets.
-        </p>
-        <ul>
-          <li>Read CSV or Excel files</li>
-          <li>Clean missing values</li>
-          <li>Group and summarize data</li>
-        </ul>
-      </article>
-    </section>
+  <div class="quiz-question">
+    <h3>1. Which library is mainly used for numerical arrays?</h3>
+    <label><input type="radio" name="q1" value="a"> Pandas</label>
+    <label><input type="radio" name="q1" value="b"> NumPy</label>
+    <label><input type="radio" name="q1" value="c"> Matplotlib</label>
+  </div>
 
-    <section class="card" style="margin-top: 18px;">
-      <h2>Basic Example</h2>
-      <p>A small analytics workflow usually starts by loading data, checking it, cleaning it, and summarizing it.</p>
-      <pre><code>import numpy as np
-import pandas as pd
+  <div class="quiz-question">
+    <h3>2. Which Pandas function is used to read a CSV file?</h3>
+    <label><input type="radio" name="q2" value="a"> pd.read_csv()</label>
+    <label><input type="radio" name="q2" value="b"> np.array()</label>
+    <label><input type="radio" name="q2" value="c"> pd.show()</label>
+  </div>
 
-data = {
-    "product": ["A", "B", "C", "D"],
-    "sales": [120, 90, 150, 80],
-    "profit": [30, 20, 45, 12]
-}
+  <div class="quiz-question">
+    <h3>3. What is a DataFrame?</h3>
+    <label><input type="radio" name="q3" value="a"> A tabular data structure</label>
+    <label><input type="radio" name="q3" value="b"> A chart type</label>
+    <label><input type="radio" name="q3" value="c"> A Python loop</label>
+  </div>
 
-df = pd.DataFrame(data)
+  <div class="quiz-question">
+    <h3>4. Which Pandas method gives summary statistics?</h3>
+    <label><input type="radio" name="q4" value="a"> describe()</label>
+    <label><input type="radio" name="q4" value="b"> clean()</label>
+    <label><input type="radio" name="q4" value="c"> convert()</label>
+  </div>
 
-average_sales = np.mean(df["sales"])
-top_product = df.sort_values("profit", ascending=False).iloc[0]
+  <div class="quiz-question">
+    <h3>5. Which NumPy function calculates the average?</h3>
+    <label><input type="radio" name="q5" value="a"> np.mean()</label>
+    <label><input type="radio" name="q5" value="b"> np.read()</label>
+    <label><input type="radio" name="q5" value="c"> np.table()</label>
+  </div>
 
-print("Average sales:", average_sales)
-print("Top product:", top_product["product"])</code></pre>
-    </section>
+  <button class="quiz-btn" onclick="checkQuizAnswers()">Check Answers</button>
+  <p id="quiz-result"></p>
+</section>
 
-    <section class="card" style="margin-top: 18px;">
-      <h2>Simple Analytics Workflow</h2>
-      <div class="workflow">
-        <div class="step"><strong>1. Load:</strong> Import data using <code>pd.read_csv()</code> or <code>pd.read_excel()</code>.</div>
-        <div class="step"><strong>2. Inspect:</strong> Use <code>head()</code>, <code>info()</code>, and <code>describe()</code>.</div>
-        <div class="step"><strong>3. Clean:</strong> Handle missing values, duplicates, and incorrect formats.</div>
-        <div class="step"><strong>4. Analyze:</strong> Use filtering, grouping, sorting, and NumPy calculations.</div>
-        <div class="step"><strong>5. Share:</strong> Export results or visualize them with charts.</div>
-      </div>
-    </section>
+<script>
+  function checkQuizAnswers() {
+    const answers = {
+      q1: "b",
+      q2: "a",
+      q3: "a",
+      q4: "a",
+      q5: "a"
+    };
 
-    <section class="card" style="margin-top: 18px;">
-      <h2>Quick MCQ Practice</h2>
-      <p>Test your basic understanding of NumPy and Pandas.</p>
+    let score = 0;
+    let total = Object.keys(answers).length;
 
-      <div class="quiz-question">
-        <h3>1. Which library is mainly used for numerical arrays?</h3>
-        <label><input type="radio" name="q1" value="a"> Pandas</label>
-        <label><input type="radio" name="q1" value="b"> NumPy</label>
-        <label><input type="radio" name="q1" value="c"> Matplotlib</label>
-      </div>
-
-      <div class="quiz-question">
-        <h3>2. Which Pandas function is commonly used to read a CSV file?</h3>
-        <label><input type="radio" name="q2" value="a"> pd.read_csv()</label>
-        <label><input type="radio" name="q2" value="b"> np.array()</label>
-        <label><input type="radio" name="q2" value="c"> pd.show()</label>
-      </div>
-
-      <div class="quiz-question">
-        <h3>3. What is a DataFrame?</h3>
-        <label><input type="radio" name="q3" value="a"> A tabular data structure</label>
-        <label><input type="radio" name="q3" value="b"> A chart type</label>
-        <label><input type="radio" name="q3" value="c"> A Python loop</label>
-      </div>
-
-      <div class="quiz-question">
-        <h3>4. Which method gives summary statistics in Pandas?</h3>
-        <label><input type="radio" name="q4" value="a"> describe()</label>
-        <label><input type="radio" name="q4" value="b"> clean()</label>
-        <label><input type="radio" name="q4" value="c"> convert()</label>
-      </div>
-
-      <div class="quiz-question">
-        <h3>5. Which NumPy function can calculate an average?</h3>
-        <label><input type="radio" name="q5" value="a"> np.mean()</label>
-        <label><input type="radio" name="q5" value="b"> np.read()</label>
-        <label><input type="radio" name="q5" value="c"> np.table()</label>
-      </div>
-
-      <button onclick="checkAnswers()">Check Answers</button>
-      <p id="result"></p>
-    </section>
-
-    <footer>
-      NumPy + Pandas = a practical foundation for everyday data analytics.
-    </footer>
-  </main>
-
-  <script>
-    function checkAnswers() {
-      const answers = {
-        q1: "b",
-        q2: "a",
-        q3: "a",
-        q4: "a",
-        q5: "a"
-      };
-
-      let score = 0;
-      let total = Object.keys(answers).length;
-
-      for (let question in answers) {
-        const selected = document.querySelector(`input[name="${question}"]:checked`);
-        if (selected && selected.value === answers[question]) {
-          score++;
-        }
+    for (let question in answers) {
+      const selected = document.querySelector(`input[name="${question}"]:checked`);
+      if (selected && selected.value === answers[question]) {
+        score++;
       }
-
-      document.getElementById("result").textContent =
-        `You scored ${score} out of ${total}.`;
     }
-  </script>
-</body>
-</html>
+
+    document.getElementById("quiz-result").textContent =
+      `You scored ${score} out of ${total}.`;
+  }
+</script>
